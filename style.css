@@ -1,0 +1,10 @@
+header h2{
+    font-size: 54px;
+    font-family: Impact;
+    color: #5f1b1c;
+    text-transform: uppercase;
+}
+header h1{color: green;}
+nav>ul{text-decoration: none;
+list-style-type: none;}
+header nav .college-history ul li a{display: none}
