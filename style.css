@@ -1,10 +1,72 @@
-header h2{
+header h2 {
     font-size: 54px;
     font-family: Impact;
     color: #5f1b1c;
     text-transform: uppercase;
+    color: green;
 }
-header h1{color: green;}
-nav>ul{text-decoration: none;
-list-style-type: none;}
-header nav .college-history ul li a{display: none}
+
+nav {
+    background-color: green;
+    padding: 10px;
+    text-align: center;
+}
+
+nav .nabigation {
+    display: flex;
+    gap: 25px;
+
+}
+
+.dropdown {
+    display: none;
+}
+
+a {
+    color: #FFF;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.nabigation li {
+    position: relative;
+}
+
+.nabigation li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+left: 0;
+width: 200px;
+
+
+}
+.dropdown li{background: skyblue;
+
+    margin-bottom: 5px;
+}
+.dropdown ul{display: none;
+width: 300px;}
+.dropdown li{position: relative;}
+.dropdown li ul{position: absolute;
+top:0;
+left: 100%;
+margin-left: 10px;}
+.dropdown li:hover ul{
+    display: block;
+}
